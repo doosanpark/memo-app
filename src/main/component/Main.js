@@ -1,14 +1,13 @@
 /*import React, {useState} from 'react';*/
 import React, {Component} from 'react';
 import "../css/Main.css"
+import {Link} from "react-router-dom";
 
-
+/*
 class Main extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            textList: []
-        }
+    state = {
+            textList: [],
+            id: 1
     }
 
     addContent = () => {
@@ -34,12 +33,12 @@ class Main extends Component {
                         </div>
                     </div>
                 </div>
-
             ]
         })
     }
 
     render() {
+        console.log("render ");
         return (
             <div className={"Content"}>
                 {this.state.textList}
@@ -47,9 +46,7 @@ class Main extends Component {
             </div>
         );
     }
-}
-
-/*
+}*/
 
 function Main() {
     const [textList, setTextList] = useState(
@@ -59,7 +56,7 @@ function Main() {
     function addContent() {
         setTextList([textList,
             <div className={"Main__Container"}>
-                <div className={"Container_head"} >
+                <div className={"Container_head"}>
                     <div style={{fontSize: "15px"}}>
                         카테고리
                     </div>
@@ -67,7 +64,7 @@ function Main() {
                         등록일
                     </div>
                 </div>
-                <div className={"Container_body"} >
+                <div className={"Container_body"}>
                     <div>
                         글 제목
                     </div>
@@ -82,10 +79,11 @@ function Main() {
     return (
         <div className={"Content"}>
             {textList}
-            <button className={"Main__Float_btn"} onClick={addContent}> +</button>
+            <Link to = {"/create"}>
+                <button className={"Main__Float_btn"} > +</button>
+            </Link>
         </div>
     )
 }
-*/
 
 export default Main;
