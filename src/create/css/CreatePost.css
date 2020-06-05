@@ -1,0 +1,26 @@
+.Create__Content {
+    width: 600px;
+    height: 700px;
+    background: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.Create__Content-words{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.Create__Content-button{
+    width: 480px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}

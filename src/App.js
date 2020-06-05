@@ -4,6 +4,7 @@ import {Card} from 'antd';
 import 'antd/dist/antd.css';
 import {Route, BrowserRouter} from 'react-router-dom';
 import Main from "../src/main/component/Main"
+import CreatePost from "./create/component/CreatePost";
 
 function App() {
     return (
@@ -11,11 +12,10 @@ function App() {
             <div className="Main">
                 <BrowserRouter>
 
-                    <Route exact path={"/main"} component={Main}/>
-                    {/*<Route exact path={"/main"} component={Main}/>*/}
+                    <Route exact path={"/"} component={Main}/>
+                    <Route exact path={"/create"} component={CreatePost}/>
 
                 </BrowserRouter>
-                <Main/>
             </div>
         </div>
     );
