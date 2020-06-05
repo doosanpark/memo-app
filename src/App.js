@@ -4,7 +4,8 @@ import {Card} from 'antd';
 import 'antd/dist/antd.css';
 import {Route, BrowserRouter} from 'react-router-dom';
 import Main from "../src/main/component/Main"
-import CreatePost from "./create/component/CreatePost";
+import TemporaryCreatePost from "./create/component/TemporaryCreatePost";
+/*import CreatePost from "./create/component/TemporaryCreatePost";*/
 
 function App() {
     return (
@@ -13,7 +14,8 @@ function App() {
                 <BrowserRouter>
 
                     <Route exact path={"/"} component={Main}/>
-                    <Route exact path={"/create"} component={CreatePost}/>
+                    <Route exact path={"/create"} component={TemporaryCreatePost}/>
+                   {/* <Route exact path={"/create"} component={CreatePost}/>*/}
 
                 </BrowserRouter>
             </div>
