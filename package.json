@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "@toast-ui/react-editor": "2.1.2",
     "antd": "4.2.5",
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "body-parser": "1.19.0",
     "cors": "2.8.5",
     "date-utils": "1.2.21",
